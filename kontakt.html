@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | ProMaler</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            max-width: var(--container-width);
+            margin: 80px auto;
+            width: 90%;
+        }
+
+        .contact-info-cards {
+            display: grid;
+            gap: 30px;
+        }
+
+        .info-card {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .info-card i {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+
+        .contact-form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-family: inherit;
+        }
+
+        .form-group textarea {
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-paint-roller"></i>
+                Pro<span>Maler</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="ueber-uns.html">Über Uns</a>
+                <a href="leistungen.html">Leistungen</a>
+                <a href="referenzen.html">Referenzen</a>
+                <a href="kontakt.html" class="active">Kontakt</a>
+            </nav>
+            <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+        </div>
+    </header>
+
+    <section class="subpage-hero">
+        <div class="hero-content">
+            <h1>Kontakt</h1>
+            <p>Haben Sie ein Projekt? Lassen Sie uns darüber sprechen.</p>
+        </div>
+    </section>
+
+    <div class="contact-grid">
+        <div class="contact-info-cards">
+            <div class="info-card">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                    <h4>Telefon</h4>
+                    <p>+49 30 12345678</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <div>
+                    <h4>E-Mail</h4>
+                    <p>info@promaler.de</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Adresse</h4>
+                    <p>Gasserstraße 22, 35232 Dautphetal</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Öffnungszeiten</h4>
+                    <p>Mo - Fr: 08:00 - 18:00 Uhr</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h2 style="margin-bottom: 25px;">Senden Sie uns eine Nachricht</h2>
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail Adresse" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Telefon (optional)</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Ihre Telefonnummer">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" placeholder="Wie können wir Ihnen helfen?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Nachricht senden</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                    <i class="fas fa-paint-roller"></i>
+                    Pro<span style="color: var(--accent);">Maler</span>
+                </a>
+                <p>Ihr Partner für professionelle Maler- und Renovierungsarbeiten.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-uns.html">Über Uns</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Gasserstraße 22, 35232 Dautphetal</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container" style="flex-direction: row; justify-content: space-between;">
+                <p>&copy; 2024 ProMaler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leistungen | ProMaler</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            max-width: var(--container-width);
+            margin: 80px auto;
+            width: 90%;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-img {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-info {
+            padding: 30px;
+        }
+
+        .service-info h3 {
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            color: var(--primary);
+        }
+
+        .service-info p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-paint-roller"></i>
+                Pro<span>Maler</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Startseite</a>
+                <a href="ueber-uns.html">Über Uns</a>
+                <a href="leistungen.html" class="active">Leistungen</a>
+                <a href="referenzen.html">Referenzen</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+            <a href="kontakt.html" class="nav-cta">Angebot anfragen</a>
+        </div>
+    </header>
+
+    <section class="subpage-hero">
+        <div class="hero-content">
+            <h1>Unsere Leistungen</h1>
+            <p>Vielfältige Lösungen für Ihre Wände und Fassaden.</p>
+        </div>
+    </section>
+
+    <section class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/innenanstrich.png');"></div>
+            <div class="service-info">
+                <h3>Innenanstrich</h3>
+                <p>Präzise Malerarbeiten für Ihre Wohnräume. Wir beraten Sie bei der Farbwahl und sorgen für ein
+                    perfektes Finish.</p>
+            </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/aussenanstrich.png');"></div>
+            <div class="service-info">
+                <h3>Außenanstrich</h3>
+                <p>Schützen Sie Ihr Gebäude vor Witterungseinflüssen mit unseren hochwertigen Außenanstrichen für
+                    Fassaden.</p>
+            </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/fassadenarbeiten.png');"></div>
+            <div class="service-info">
+                <h3>Fassadenarbeiten</h3>
+                <p>Von der Reinigung bis zur Sanierung – wir machen Ihre Fassade wieder zum Aushängeschild Ihres Hauses.
+                </p>
+            </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/tapezieren.png');"></div>
+            <div class="service-info">
+                <h3>Tapezierarbeiten</h3>
+                <p>Egal ob Raufaser, Vlies oder Designtapete – wir bringen Ihre Wunschtapete fachgerecht an die Wand.
+                </p>
+            </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/lackieren.png');"></div>
+            <div class="service-info">
+                <h3>Lackierarbeiten</h3>
+                <p>Türen, Fenster oder Heizkörper – wir verleihen Ihren Oberflächen neuen Glanz mit professionellen
+                    Lackierungen.</p>
+            </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('images/bodenbeschichtung.png');"></div>
+            <div class="service-info">
+                <h3>Bodenbeschichtung</h3>
+                <p>Robuste und ästhetische Lösungen für Garagen, Balkone und Industrieflächen mit hochwertigem Epoxidharz.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                    <i class="fas fa-paint-roller"></i>
+                    Pro<span style="color: var(--accent);">Maler</span>
+                </a>
+                <p>Ihr Partner für professionelle Maler- und Renovierungsarbeiten.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="ueber-uns.html">Über Uns</a></li>
+                    <li><a href="leistungen.html">Leistungen</a></li>
+                    <li><a href="referenzen.html">Referenzen</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="impressum.html">Impressum</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Kontakt</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Gasserstraße 22, 35232 Dautphetal</p>
+                <p><i class="fas fa-phone"></i> +49 30 12345678</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container" style="flex-direction: row; justify-content: space-between;">
+                <p>&copy; 2024 ProMaler. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
