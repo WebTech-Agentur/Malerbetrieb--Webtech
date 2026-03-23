@@ -491,6 +491,8 @@ footer {
     
     .hero-illustration {
         order: -1;
+        margin-top: 100px !important;
+        margin-bottom: 20px;
     }
     
     .hero-illustration img {
@@ -498,7 +500,46 @@ footer {
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: auto !important;
+        min-height: 100vh;
+        padding-top: 80px !important;
+        padding-bottom: 60px;
+        display: block !important;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    .about-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 20px !important;
+    }
+    
+    .about-text {
+        order: 1 !important;
+    }
+    
+    .about-image {
+        order: 2 !important;
+        margin-top: 15px !important;
+    }
+    
+    .about-image img {
+        width: 100% !important;
+    }
+    
+    .about-text p {
+        font-size: 16px !important;
     }
 }
 
@@ -542,5 +583,43 @@ footer {
 @media (min-width: 769px) and (max-width: 1024px) {
     .services-grid {
         grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+/* ==========================================================================
+   FINAL RESPONSIVE FIXES (Force Overrides)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .hero {
+        height: auto !important;
+        min-height: calc(100vh - 80px) !important;
+        padding-top: 140px !important; /* Huge padding to clear header */
+        padding-bottom: 60px;
+        display: block !important;
+        position: relative !important;
+    }
+
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 40px !important;
+    }
+
+    .hero-illustration {
+        order: -1 !important;
+        margin-top: 0 !important;
+        margin-bottom: 30px !important;
+        background: none !important; /* Explicitly remove any field */
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem !important;
+        line-height: 1.2;
+    }
+
+    .hero-illustration img {
+        max-width: 280px !important;
+        margin: 0 auto !important;
     }
 }
